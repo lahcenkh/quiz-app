@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #F5F7FB;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    padding: 0;
+}
+
+li {
+    width: max-content;
+    padding: .5em 1em;
+    cursor: pointer;
+    transition: .5s;
+    transform: scale(1);
+}
+
+li:active {
+    transform: scale(.9);
+}
+
+.cliked--true {
+    background-color: #D6DBF5;
+    border: 1px solid #293264;
+    border-radius: 10px;
+}
+
+.cliked--false {
+    background-color: none;
+    border: 1px solid #293264;
+    border-radius: 10px;
+}
+
+.quiz--page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    padding: 1.5em 0;
+    border-bottom: 1px solid #DBDEF0;
+    color: #293264;
+}
+
+.question h4 {
+    margin-bottom: 1.5em;
+    font-weight: 700;
+}
+
+button {
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    background-color: #4D5B9E;
+    color: #f0f2ff;
+    font-weight: 500;
+    padding: .8em 1.5em;
+    border-radius: 10px;
+    border: none;
+    margin-top: 2em;
+    width: fit-content; 
+    cursor: pointer; 
+    align-self: center; 
+}
+
+button:hover {
+    background-color: #5c6cbd;
+    color: #f0f2ff;
+    font-weight: 500;
+}
+
+.style_correct,
+.style_incorrect,
+.style_others {
+    border-radius: 10px;
+    width: max-content;
+    padding: .5em 1em;
+}
+
+.style_correct{
+    background-color: #94D7A2; 
+    border: none;
+}
+
+.style_incorrect{
+    background-color: #F8BCBC; 
+    border: none;
+}
+
+.style_others{
+    background-color: none;
+    border: 1px solid #29326483;
+}
+
+.paly-score {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.paly-score p {
+    font-weight: 600;
+    color: #293264;
+    font-size: 1.3rem;
+}
+
+.paly-again {
+    margin-top: 0;
+}
+
+/* style home */
+
+.home {
+    text-align: center;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: #293264;
+    font-size: 2rem;
+}
